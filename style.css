@@ -1,0 +1,155 @@
+* {
+    padding:0;
+    margin:0;
+    font-family: 'Hanken Grotesk', sans-serif;
+    box-sizing:border-box;
+    font:inherit;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+#container {
+    background-color: white;
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+#container-top {
+    background-color: hsl(241, 65%, 50%);
+    height:100vh;
+    flex-basis: 43%;
+    border-radius: 20px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+#your-result {
+    margin-bottom: 10px;
+    font-size: 0.85rem;
+    margin-top:10px;
+    opacity:0.6;
+}
+
+#circle {
+    background-color: black;
+    background: linear-gradient(to bottom, hsla(241, 64%, 44%, 1), rgb(45, 42, 223));
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    height: 22vh;
+    text-align: center;
+}
+
+#circle h1 {
+    font-size: 2.2rem;
+    margin-top: 15px;
+}
+
+#circle p {
+    opacity:0.5;
+    font-size: 0.7rem;
+}
+
+#summary {
+    font-size: 0.75rem;
+    opacity:0.7;
+    padding:5px 80px 10px;
+    text-align: center;
+}
+
+#container-bottom {
+    flex-basis:57%;
+    display:flex;
+    flex-direction:column;
+}
+
+#container-bottom h2 {
+    padding:16px;
+    font-weight: 700;
+    margin-top: 8px;
+    margin-left: 25px;
+}
+
+#container-bottom ul {
+    margin-bottom: 5px;
+}
+
+.score {
+    margin-left: auto;
+}
+
+#reaction {
+    background-color: hsl(0, 100%, 67%, 0.2);
+    display:flex;
+    color: hsl(0, 76%, 51%);
+}
+
+#memory {
+    background-color: hsl(39, 100%, 56%,0.2);
+    display:flex;
+    color: hsl(39, 94%, 46%);
+}
+
+#verbal {
+    background-color: hsl(166, 100%, 37%,0.2);
+    display:flex;
+    color: hsl(166, 95%, 36%);
+}
+
+#visual {
+   background-color: hsl(234, 85%, 45%,0.2);
+   display:flex;
+   color: hsl(234, 88%, 38%);
+}
+
+#container-bottom ul li {
+    margin-bottom:10px;
+    padding: 10px 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    border-radius: 7px;
+}
+
+#button {
+    margin-bottom: 20px;
+    padding:15px;
+    margin-left: 25px;
+    margin-right: 25px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    background-color: hsl(222, 23%, 29%);
+    color:white;
+}
+
+@media (min-width:376px) {
+
+   #container {
+    display:flex;
+    flex-direction: row;
+    height:100vh;
+   }
+
+   #container-top {
+    flex-basis:40%;
+   }
+
+   #circle {
+    height:35vh
+   }
+
+   #summary {
+    padding:20px
+   }
+
+   #circle h1 {
+    font-size: 4.5rem;
+   }
+    }
